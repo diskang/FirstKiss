@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--basic-->
+    <string name="senfal_name">SenFal</string>
+    <string name="senfal_fillin">SenFal_blah</string>
+    <string name="senfal_prefer">Preference</string>
+    <string name="action_settings">Preference</string>
+    <string name="START_RECORD">start</string>
+    <string name="END_RECORD">finish</string>
+<!--main view-->
+    <string name="FALL_DETECTION_FUNCTION">FALL</string>
+     <string name="record_acc_activity_name">record</string>
+
+
+</resources>

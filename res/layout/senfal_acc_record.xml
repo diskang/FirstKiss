@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<GridView
+    android:id="@+id/senfal_gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="316dp"
+    android:columnWidth="90dp"
+    android:gravity="center"
+    android:horizontalSpacing="10dp"
+    android:numColumns="4"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="5dp" />
+
+    <LinearLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp" >
+
+        <Button
+            android:id="@+id/senfal_record_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.50"
+            android:text="@string/START_RECORD" />
+
+        <Button
+            android:id="@+id/senfal_record_end"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.41"
+            android:text="@string/END_RECORD" />
+    </LinearLayout>
+
+</FrameLayout>

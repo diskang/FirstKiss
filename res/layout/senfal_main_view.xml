@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/senfal_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/senfal_sensor_canvas_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="2.05"
+        android:orientation="vertical" />
+
+    <!--
+      fragment
+    android:id="@+id/senfal_bottom_button_fragment"
+	android:name="com.ksy.senfal.fragment.BottomButtonFragment"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    tools:layout="@layout/senfal_bottom_button_fragment" /
+    -->
+
+    <LinearLayout
+        android:id="@+id/senfal_bottom_button_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/senfal_main_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_vertical"
+            android:layout_weight="1"
+            android:text="Main" />
+
+        <Button
+            android:id="@+id/senfal_record_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Record" />
+
+    </LinearLayout>
+
+</LinearLayout>
