@@ -1,31 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="internalOnly"
     package="com.ksy.firstkiss"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="22" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
     <application
-        android:allowBackup="true"
+        android:name="com.ksy.firstkiss.FirstKissApplication"
+        android:allowBackup="false"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
-        
-<!--fall detection  -->        
+       
 		<activity
-            android:name="com.ksy.senfal.MainView"
+            android:name=".ui.MainActivity"
             android:label="@string/record_acc_activity_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-                  
+        
+		<activity
+            android:name=".ui.SettingActivity"
+            android:label="@string/record_acc_activity_name">
+        </activity>
+        <service
+            android:name="com.ksy.senfal.core.UpdateService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1">
+                <action android:name="com.sjtu.icarer.thread.AUTORUN" />
+                <category android:name="android.intent.category.default" />        
+            </intent-filter>
+        </service>
     </application>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    
+    
+
 </manifest>

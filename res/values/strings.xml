@@ -8,4 +8,6 @@
     <string name="textview1">System Online</string>
     <string name="button1">Quit</string>
     
+    <string name="label_exit">退出程序</string>
+    <string name="label_settings">基本设定</string>
 </resources>

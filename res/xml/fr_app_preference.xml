@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="紧急联系人设置" android:key="urgent_contact">
+        <EditTextPreference 
+	        android:key="urgent_contact_name"
+	        android:title="联系人姓名" />
+        <EditTextPreference 
+	        android:key="urgent_contact_phone"
+	        android:title="联系人手机号" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="系统设置" android:key="system">
+
+        <CheckBoxPreference 
+	        android:key="run_in_background"
+	        android:title="是否允许后台运行" 
+	        android:summary="请允许，不然无法正常使用"/>
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

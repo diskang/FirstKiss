@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="关于此软件" android:key="about_software">
+        <Preference 
+	        android:key="about_software_version"
+	        android:title="软件版本" 
+	        android:summary="2.0.0"/>
+        <Preference 
+	        android:key="about_software_company"
+	        android:title="公司信息" 
+	        android:summary="xxx"/>
+        <Preference 
+	        android:key="about_software_update"
+	        android:title="检查更新" 
+	        android:summary="功能不可用"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="关于作者" android:key="about_author">
+
+        <Preference 
+	        android:key="about_author_name"
+	        android:title="作者信息" 
+	        android:summary="上海交通大学-计算机系-康世勇"/>
+        <Preference 
+	        android:key="about_author_contact"
+	        android:title="联系方式" 
+	        android:summary="任何问题请发送邮件至compu@sjtu.edu.cn"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
